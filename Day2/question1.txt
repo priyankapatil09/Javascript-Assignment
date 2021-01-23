@@ -1,0 +1,20 @@
+1) What will the code below output to the console and why?
+
+console.log(1 + "2" + "2") ==> 122
+"+" is used for both Numeric addition and String Concatenation. In above example "2"  is string therefore 1 is also treated as a string and concatenated to "2" which gives "12" and last "2" is also string therefore it is also conatenated to "12" therefore output is "122"
+
+
+console.log(1 + +"2" + "2") ==> 32
+In above example "1" is number @ "2" is string but +"2" operatoin casts the "2" to the number therefore 1 + +"2" gives 3 and last "2" is string therefore 3 is treated as string & conatenated to "2" therefore output is "32"
+
+ console.log(1 + -"1" + "2") ==> 02
+ In above example -"1" cast the 1 into -1 number  therefore 1 + -"1" gives 0 and last "2" is string therefore do 0 ya treated as string @ conatenated to "2" therefore output is "02"
+
+ console.log(+"1" + "1" + "2")  ==> 112
+ "+" casts the "1" to number but second "2" it is treated as a string and concatenated to the "2" therefore +"1" + "1" gives 12 last is also string so it is further concatenated to 12 therefore output is "112"
+
+ console.log( "A" - "B" + "2") ==> NaN2
+ first two are not numbers therefore it gives output NaN & 2 string it is cocatenated to NaN therefore answer is NaN2
+
+ console.log( "A" - "B" + 2) ==> NaN
+ first two are not numbers therefore it gives output NaN & 2 number but first answer is NaN  therefore answer is NaNs
